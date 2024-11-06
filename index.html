@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Jogos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Jogos</h1>
+        <div id="form">
+            <input type="text" id="nome" placeholder="Nome do Jogo">
+            <input type="text" id="genero" placeholder="Gênero">
+            <button onclick="adicionarJogo()">Adicionar Jogo</button>
+            <button onclick="atualizarJogo()" style="display: none;" id="btnAtualizar">Atualizar Jogo</button>
+        </div>
+        <div id="lista">
+            <h2>Jogos Cadastrados</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Gênero</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="tabelaJogos">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
